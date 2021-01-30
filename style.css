@@ -131,12 +131,30 @@ li span {
 
 .complete-title {
   color: rgb(64, 233, 13);
-  transform: scale(1.4);
+  animation: complete 4s infinite;
+}
+
+@keyframes complete {
+  0% {
+    color: rgb(43, 160, 7);
+  }
+
+  50% {
+    color: rgb(64, 233, 13);
+    transform: scale(1.4);
+  }
+
+  100% {
+    color: rgb(43, 160, 7);
+  }
 }
 
 .complete-background {
   position: absolute;
-  top: -20px;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
   z-index: -1;
 }
 
@@ -216,10 +234,5 @@ li span {
 
   li span {
     font-size: 40px;
-  }
-
-  .complete-background {
-    max-height: 120%;
-    top: -28px;
   }
 }
