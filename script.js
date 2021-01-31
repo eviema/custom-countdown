@@ -14,7 +14,7 @@ const completeBg = document.querySelector("img");
 
 let countdownTitle = "";
 let countdownDate = "";
-let countdownValue = Date;
+let countdownValue = 0;
 let countdownActive;
 let savedCountdown;
 
